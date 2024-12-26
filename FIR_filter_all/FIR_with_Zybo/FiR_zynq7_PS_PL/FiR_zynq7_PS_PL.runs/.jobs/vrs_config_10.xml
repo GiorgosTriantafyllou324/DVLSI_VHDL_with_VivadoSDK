@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zybo_design_1_fir_filter_ip_0_0_synth_1" LaunchDir="C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/zybo_design_1_fir_filter_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

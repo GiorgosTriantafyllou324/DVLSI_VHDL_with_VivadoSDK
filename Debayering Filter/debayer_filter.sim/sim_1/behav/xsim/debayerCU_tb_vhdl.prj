@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../debayer_filter.srcs/sources_1/new/debayerController.vhd" \
+"../../../../debayer_filter.srcs/sources_1/imports/new/depth_reg.vhd" \
+"../../../../debayer_filter.srcs/sim_1/new/debayerCU_tb.vhd" \
+
+# Do not sort compile order
+nosort

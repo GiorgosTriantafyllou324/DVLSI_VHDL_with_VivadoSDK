@@ -1,0 +1,41 @@
+19:04:00 **** Build of configuration Debug for project dhrystone_bench ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/dhry_1.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dhry_1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dhrystone_bench_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dhry_1.d" -MT"src/dhry_1.o" -o "src/dhry_1.o" "../src/dhry_1.c"
+In file included from ../src/dhry_1.c:19:0:
+../src/dhry_1.c: In function 'main':
+../src/xil_config.h:44:5: warning: implicit declaration of function 'xil_printf'; did you mean 'viprintf'? [-Wimplicit-function-declaration]
+     xil_printf(str, ## args); \
+     ^
+../src/dhry_1.c:215:3: note: in expansion of macro 'printf'
+   printf ("\n");
+   ^~~~~~
+'Finished building: ../src/dhry_1.c'
+' '
+'Building file: ../src/dhry_2.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dhry_2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dhrystone_bench_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dhry_2.d" -MT"src/dhry_2.o" -o "src/dhry_2.o" "../src/dhry_2.c"
+'Finished building: ../src/dhry_2.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dhrystone_bench_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: dhrystone_bench.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dhrystone_bench_bsp/ps7_cortexa9_0/lib -o "dhrystone_bench.elf"  ./src/dhry_1.o ./src/dhry_2.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dhrystone_bench.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dhrystone_bench.elf  |tee "dhrystone_bench.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31612	   1144	  21656	  54412	   d48c	dhrystone_bench.elf
+'Finished building: dhrystone_bench.elf.size'
+' '
+
+19:04:01 Build Finished (took 1s.667ms)
+

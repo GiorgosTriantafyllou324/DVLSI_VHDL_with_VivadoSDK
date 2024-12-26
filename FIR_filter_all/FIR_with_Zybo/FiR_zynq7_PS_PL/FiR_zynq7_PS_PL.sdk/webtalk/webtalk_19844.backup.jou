@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Tue Apr 23 12:52:58 2024
+# Process ID: 19844
+# Current directory: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

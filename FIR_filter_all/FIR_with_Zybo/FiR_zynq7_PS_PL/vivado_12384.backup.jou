@@ -1,0 +1,216 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 27 17:56:29 2024
+# Process ID: 12384
+# Current directory: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23676 C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.xpr
+# Log file: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/vivado.log
+# Journal file: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.xpr
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/FIR_filter_unit.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/Control_Unit.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/ROM.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/RAM.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/MAC.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/dff_delay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/depth_reg.vhd] -no_script -reset -force -quiet
+remove_files  {c:/Users/gamin/Downloads/FIR_vhdl_files/FIR_filter_unit.vhd c:/Users/gamin/Downloads/FIR_vhdl_files/Control_Unit.vhd c:/Users/gamin/Downloads/FIR_vhdl_files/ROM.vhd c:/Users/gamin/Downloads/FIR_vhdl_files/RAM.vhd c:/Users/gamin/Downloads/FIR_vhdl_files/MAC.vhd c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/dff_delay.vhd c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/depth_reg.vhd}
+add_files -norecurse -copy_to c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src {C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/MAC.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/RAM.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/dff_delay.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/FIR_filter_unit.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/Control_Unit.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/ROM.vhd}
+add_files -norecurse -copy_to c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src {C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/MAC.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/RAM.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/dff_delay.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/FIR_filter_unit.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/Control_Unit.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/ROM.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src C:/Users/gamin/VivadoWorkspace/Pipeline_Technique/Pipeline_Technique.srcs/sources_1/new/depth_reg.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -copy_to c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sim_1/new/FIR_filter_uutb.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FIR_filter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source FIR_filter_tb.tcl
+close_sim
+launch_simulation
+source FIR_filter_tb.tcl
+current_project FiR_zynq7_PS_PL
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project fir_filter_ip_v1_0_project
+close_sim
+launch_simulation
+source FIR_filter_tb.tcl
+close_sim
+launch_simulation
+source FIR_filter_tb.tcl
+close_sim
+ipx::merge_project_changes files [ipx::current_core]
+close_project
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 47 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project FiR_zynq7_PS_PL
+open_bd_design {C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/zybo_design_1.bd}
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells fir_filter_ip_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fir_filter_ip:1.0 fir_filter_ip_0
+endgroup
+set_property location {3 969 -149} [get_bd_cells fir_filter_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/fir_filter_ip_0/S00_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins fir_filter_ip_0/S00_AXI]
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+set_property location {2 627 -167} [get_bd_cells rst_ps7_0_50M]
+set_property location {2 677 -455} [get_bd_cells ps7_0_axi_periph]
+set_property location {3 1017 -449} [get_bd_cells fir_filter_ip_0]
+set_property location {3 1037 -426} [get_bd_cells fir_filter_ip_0]
+set_property location {1 179 -305} [get_bd_cells processing_system7_0]
+set_property location {0.5 -153 -295} [get_bd_cells processing_system7_0]
+set_property location {1.5 56 -298} [get_bd_cells processing_system7_0]
+set_property location {1 62 -425} [get_bd_cells processing_system7_0]
+set_property location {1 61 -268} [get_bd_cells processing_system7_0]
+set_property location {1 61 -284} [get_bd_cells processing_system7_0]
+set_property location {99 -578} [get_bd_intf_ports FIXED_IO]
+set_property location {412 -275} [get_bd_intf_ports FIXED_IO]
+set_property location {409 -346} [get_bd_intf_ports DDR]
+set_property location {78 -626} [get_bd_intf_ports DDR]
+set_property location {0.5 -155 -287} [get_bd_cells processing_system7_0]
+set_property location {1 -139 -262} [get_bd_cells processing_system7_0]
+set_property location {1 -146 -283} [get_bd_cells processing_system7_0]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+report_ip_status -name ip_status 
+current_project fir_filter_ip_v1_0_project
+current_project FiR_zynq7_PS_PL
+set_property location {147 -646} [get_bd_intf_ports FIXED_IO]
+current_project fir_filter_ip_v1_0_project
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 48 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project FiR_zynq7_PS_PL
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project fir_filter_ip_v1_0_project
+current_project FiR_zynq7_PS_PL
+upgrade_ip -vlnv xilinx.com:user:fir_filter_ip:1.0 [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+report_ip_status -name ip_status 
+file copy -force C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.sysdef C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+current_project fir_filter_ip_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 49 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project FiR_zynq7_PS_PL
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+endgroup
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:fir_filter_ip:1.0 [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+report_ip_status -name ip_status 
+file copy -force C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.sysdef C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+
+open_run impl_1
+close_design
+file copy -force C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.sysdef C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+file copy -force C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.sysdef C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+current_project fir_filter_ip_v1_0_project
+reset_run impl_1
+launch_simulation
+launch_simulation
+launch_simulation
+current_project FiR_zynq7_PS_PL
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project fir_filter_ip_v1_0_project
+launch_simulation
+launch_simulation
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_simulation
+launch_simulation -mode post-synthesis -type timing
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_unit.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/dff_delay.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/depth_reg.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/ROM.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/RAM.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/MAC.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_uutb.vhd]
+launch_simulation
+source FIR_filter_tb.tcl
+close_sim
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 50 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+upgrade_ip -vlnv xilinx.com:user:fir_filter_ip:1.0 [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:fir_filter_ip:1.0 [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+validate_bd_design
+report_ip_status -name ip_status 
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml

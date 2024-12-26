@@ -1,0 +1,1045 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 27 17:56:29 2024
+# Process ID: 12384
+# Current directory: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23676 C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.xpr
+# Log file: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/vivado.log
+# Journal file: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 832.828 ; gain = 211.348
+update_compile_order -fileset sources_1
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 947.973 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 961.199 ; gain = 13.227
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/FIR_filter_unit.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/Control_Unit.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/ROM.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/RAM.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/Downloads/FIR_vhdl_files/MAC.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/dff_delay.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/depth_reg.vhd] -no_script -reset -force -quiet
+remove_files  {c:/Users/gamin/Downloads/FIR_vhdl_files/FIR_filter_unit.vhd c:/Users/gamin/Downloads/FIR_vhdl_files/Control_Unit.vhd c:/Users/gamin/Downloads/FIR_vhdl_files/ROM.vhd c:/Users/gamin/Downloads/FIR_vhdl_files/RAM.vhd c:/Users/gamin/Downloads/FIR_vhdl_files/MAC.vhd c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/dff_delay.vhd c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/depth_reg.vhd}
+add_files -norecurse -copy_to c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src {C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/MAC.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/RAM.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/dff_delay.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/FIR_filter_unit.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/Control_Unit.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/ROM.vhd}
+ERROR: [Vivado 12-3630] The destination file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/MAC.vhd' already exists, please use -force if you want to overwrite!
+add_files -norecurse -copy_to c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src {C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/MAC.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/RAM.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/dff_delay.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/FIR_filter_unit.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/Control_Unit.vhd C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sources_1/new/ROM.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src C:/Users/gamin/VivadoWorkspace/Pipeline_Technique/Pipeline_Technique.srcs/sources_1/new/depth_reg.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -copy_to c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.srcs/sim_1/new/FIR_filter_uutb.vhd
+update_compile_order -fileset sim_1
+set_property top FIR_filter_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAC'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/depth_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'depth_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/dff_delay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DFF'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_uutb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ba10346c58a94b96b4ffa3af754f67d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FIR_filter_tb_behav xil_defaultlib.FIR_filter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=9)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC [mac_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_filter_unit [fir_filter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_filter_tb
+Built simulation snapshot FIR_filter_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/FIR_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 27 18:04:34 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIR_filter_tb_behav -key {Behavioral:sim_1:Functional:FIR_filter_tb} -tclbatch {FIR_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FIR_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIR_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 974.930 ; gain = 2.617
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_uutb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ba10346c58a94b96b4ffa3af754f67d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FIR_filter_tb_behav xil_defaultlib.FIR_filter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=9)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC [mac_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_filter_unit [fir_filter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_filter_tb
+Built simulation snapshot FIR_filter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIR_filter_tb_behav -key {Behavioral:sim_1:Functional:FIR_filter_tb} -tclbatch {FIR_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FIR_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIR_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_project FiR_zynq7_PS_PL
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+report_ip_status -name ip_status
+current_project fir_filter_ip_v1_0_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAC'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ba10346c58a94b96b4ffa3af754f67d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FIR_filter_tb_behav xil_defaultlib.FIR_filter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=9)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC [mac_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_filter_unit [fir_filter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_filter_tb
+Built simulation snapshot FIR_filter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIR_filter_tb_behav -key {Behavioral:sim_1:Functional:FIR_filter_tb} -tclbatch {FIR_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FIR_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIR_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1171.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAC'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ba10346c58a94b96b4ffa3af754f67d4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FIR_filter_tb_behav xil_defaultlib.FIR_filter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=9)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC [mac_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_filter_unit [fir_filter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_filter_tb
+Built simulation snapshot FIR_filter_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIR_filter_tb_behav -key {Behavioral:sim_1:Functional:FIR_filter_tb} -tclbatch {FIR_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FIR_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIR_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1171.953 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/Control_Unit.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/FIR_filter_unit.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/MAC.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/RAM.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlsynthesis (VHDL Synthesis)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/ROM.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/Control_Unit.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/FIR_filter_unit.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/MAC.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/RAM.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+WARNING: [IP_Flow 19-5109] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': File 'c:/Users/gamin/Downloads/FIR_vhdl_files/ROM.vhd' does not exist in the project sources. It has been removed from the packaged IP. If still required, please add this file to the project, merge sources and re-package.
+ERROR: [Vivado 12-106] *** Exception: java.lang.IllegalArgumentException: c:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\ip_repo\fir_filter_ip_1.0\..\..\..\..\Downloads\FIR_vhdl_files is not a directory. (See C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/vivado_pid12384.debug)
+ERROR: [Common 17-39] 'ipx::merge_project_changes' failed due to earlier errors.
+close_project
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1171.953 ; gain = 0.000
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml' ignored by IP packager.
+set_property core_revision 47 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project FiR_zynq7_PS_PL
+open_bd_design {C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/zybo_design_1.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding cell -- xilinx.com:user:fir_filter_ip:1.0 - fir_filter_ip_0
+Successfully read diagram <zybo_design_1> from BD file <C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/zybo_design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1199.734 ; gain = 27.781
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M00_AXI] [get_bd_cells fir_filter_ip_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:fir_filter_ip:1.0 fir_filter_ip_0
+endgroup
+set_property location {3 969 -149} [get_bd_cells fir_filter_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (50 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (50 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/fir_filter_ip_0/S00_AXI} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins fir_filter_ip_0/S00_AXI]
+</fir_filter_ip_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+report_ip_status -name ip_status
+upgrade_ip [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/zybo_design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded zybo_design_1_fir_filter_ip_0_0 (fir_filter_ip_v1.0 1.0) from revision 46 to revision 47
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+Wrote  : <C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/ui/bd_cadacc23.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+set_property location {2 627 -167} [get_bd_cells rst_ps7_0_50M]
+set_property location {2 677 -455} [get_bd_cells ps7_0_axi_periph]
+set_property location {3 1017 -449} [get_bd_cells fir_filter_ip_0]
+set_property location {3 1037 -426} [get_bd_cells fir_filter_ip_0]
+set_property location {1 179 -305} [get_bd_cells processing_system7_0]
+set_property location {0.5 -153 -295} [get_bd_cells processing_system7_0]
+set_property location {1.5 56 -298} [get_bd_cells processing_system7_0]
+set_property location {1 62 -425} [get_bd_cells processing_system7_0]
+set_property location {1 61 -268} [get_bd_cells processing_system7_0]
+set_property location {1 61 -284} [get_bd_cells processing_system7_0]
+set_property location {99 -578} [get_bd_intf_ports FIXED_IO]
+set_property location {412 -275} [get_bd_intf_ports FIXED_IO]
+set_property location {409 -346} [get_bd_intf_ports DDR]
+set_property location {78 -626} [get_bd_intf_ports DDR]
+set_property location {0.5 -155 -287} [get_bd_cells processing_system7_0]
+set_property location {1 -139 -262} [get_bd_cells processing_system7_0]
+set_property location {1 -146 -283} [get_bd_cells processing_system7_0]
+save_bd_design
+Wrote  : <C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/ui/bd_cadacc23.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/synth/zybo_design_1.vhd
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/sim/zybo_design_1.vhd
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hdl/zybo_design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fir_filter_ip_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/ip/zybo_design_1_auto_pc_0/zybo_design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hw_handoff/zybo_design_1.hwh
+Generated Block Design Tcl file C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hw_handoff/zybo_design_1_bd.tcl
+Generated Hardware Definition File C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/synth/zybo_design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP zybo_design_1_auto_pc_0, cache-ID = a73610253ab0a3c0; cache size = 18.596 MB.
+[Sat Apr 27 18:15:42 2024] Launched zybo_design_1_fir_filter_ip_0_0_synth_1, synth_1...
+Run output will be captured here:
+zybo_design_1_fir_filter_ip_0_0_synth_1: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/zybo_design_1_fir_filter_ip_0_0_synth_1/runme.log
+synth_1: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/synth_1/runme.log
+[Sat Apr 27 18:15:42 2024] Launched impl_1...
+Run output will be captured here: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1339.383 ; gain = 83.176
+report_ip_status -name ip_status 
+current_project fir_filter_ip_v1_0_project
+current_project FiR_zynq7_PS_PL
+set_property location {147 -646} [get_bd_intf_ports FIXED_IO]
+current_project fir_filter_ip_v1_0_project
+launch_runs impl_1 -jobs 10
+[Sat Apr 27 18:21:44 2024] Launched synth_1...
+Run output will be captured here: c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.runs/synth_1/runme.log
+[Sat Apr 27 18:21:44 2024] Launched impl_1...
+Run output will be captured here: c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.runs/impl_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml' ignored by IP packager.
+set_property core_revision 48 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project FiR_zynq7_PS_PL
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+report_ip_status -name ip_status
+current_project fir_filter_ip_v1_0_project
+current_project FiR_zynq7_PS_PL
+upgrade_ip -vlnv xilinx.com:user:fir_filter_ip:1.0 [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/zybo_design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded zybo_design_1_fir_filter_ip_0_0 (fir_filter_ip_v1.0 1.0) from revision 47 to revision 48
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/synth/zybo_design_1.vhd
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/sim/zybo_design_1.vhd
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hdl/zybo_design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fir_filter_ip_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/ip/zybo_design_1_auto_pc_0/zybo_design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hw_handoff/zybo_design_1.hwh
+Generated Block Design Tcl file C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hw_handoff/zybo_design_1_bd.tcl
+Generated Hardware Definition File C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/synth/zybo_design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP zybo_design_1_auto_pc_0, cache-ID = a73610253ab0a3c0; cache size = 19.087 MB.
+[Sat Apr 27 18:25:07 2024] Launched zybo_design_1_fir_filter_ip_0_0_synth_1, synth_1...
+Run output will be captured here:
+zybo_design_1_fir_filter_ip_0_0_synth_1: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/zybo_design_1_fir_filter_ip_0_0_synth_1/runme.log
+synth_1: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/synth_1/runme.log
+[Sat Apr 27 18:25:07 2024] Launched impl_1...
+Run output will be captured here: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1451.227 ; gain = 21.992
+report_ip_status -name ip_status 
+file copy -force C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.sysdef C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+current_project fir_filter_ip_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml' ignored by IP packager.
+set_property core_revision 49 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project FiR_zynq7_PS_PL
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:fir_filter_ip:1.0 [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/zybo_design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded zybo_design_1_fir_filter_ip_0_0 (fir_filter_ip_v1.0 1.0) from revision 48 to revision 49
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/synth/zybo_design_1.vhd
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/sim/zybo_design_1.vhd
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hdl/zybo_design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fir_filter_ip_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/ip/zybo_design_1_auto_pc_0/zybo_design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hw_handoff/zybo_design_1.hwh
+Generated Block Design Tcl file C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hw_handoff/zybo_design_1_bd.tcl
+Generated Hardware Definition File C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/synth/zybo_design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP zybo_design_1_auto_pc_0, cache-ID = a55a396f04eaec77; cache size = 19.487 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP zybo_design_1_processing_system7_0_0, cache-ID = 08554ee2be47392c; cache size = 19.487 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP zybo_design_1_rst_ps7_0_50M_0, cache-ID = a9400080c0b8edc6; cache size = 19.487 MB.
+[Sat Apr 27 18:35:52 2024] Launched zybo_design_1_fir_filter_ip_0_0_synth_1, synth_1...
+Run output will be captured here:
+zybo_design_1_fir_filter_ip_0_0_synth_1: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/zybo_design_1_fir_filter_ip_0_0_synth_1/runme.log
+synth_1: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/synth_1/runme.log
+[Sat Apr 27 18:35:52 2024] Launched impl_1...
+Run output will be captured here: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:24 ; elapsed = 00:00:37 . Memory (MB): peak = 1671.730 ; gain = 67.391
+report_ip_status -name ip_status 
+file copy -force C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.sysdef C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.345 . Memory (MB): peak = 2446.074 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.345 . Memory (MB): peak = 2446.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2446.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_run: Time (s): cpu = 00:00:25 ; elapsed = 00:00:22 . Memory (MB): peak = 2561.969 ; gain = 885.648
+close_design
+file copy -force C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.sysdef C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.sysdef C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk -hwspec C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.sdk/zybo_design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+current_project fir_filter_ip_v1_0_project
+reset_run impl_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] FIR_filter_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] FIR_filter_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] FIR_filter_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+current_project FiR_zynq7_PS_PL
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+report_ip_status -name ip_status
+current_project fir_filter_ip_v1_0_project
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] FIR_filter_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] FIR_filter_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs impl_1 -jobs 10
+[Sat Apr 27 19:13:56 2024] Launched synth_1...
+Run output will be captured here: c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.runs/synth_1/runme.log
+[Sat Apr 27 19:13:56 2024] Launched impl_1...
+Run output will be captured here: c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.runs/impl_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] FIR_filter_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -mode post-synthesis -type timing
+INFO: [Vivado 12-5682] Launching post-synthesis timing simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-20] The target language is set to VHDL, it is not supported for simulation type 'timing', using Verilog instead.
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z010clg400-1
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2723.684 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim/FIR_filter_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim/FIR_filter_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim/FIR_filter_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim/FIR_filter_tb_time_synth.sdf
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim'
+"xvlog --incr --relax -prj FIR_filter_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim/FIR_filter_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_Unit
+INFO: [VRFC 10-311] analyzing module DFF
+INFO: [VRFC 10-311] analyzing module FIR_filter_unit
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-311] analyzing module RAM
+INFO: [VRFC 10-311] analyzing module ROM
+INFO: [VRFC 10-311] analyzing module depth_reg
+INFO: [VRFC 10-311] analyzing module fir_filter_ip_v1_0
+INFO: [VRFC 10-311] analyzing module fir_filter_ip_v1_0_S00_AXI
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+ERROR: [XSIM 43-3268] Logical library name '"../../../../../../../../ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd"' should not contain white space, new line, /, \, = or .
+ERROR: [XSIM 43-3217] FIR_filter_tb_vhdl.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/synth/timing/xsim/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2743.348 ; gain = 27.969
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_unit.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/dff_delay.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/depth_reg.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/ROM.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/RAM.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/MAC.vhd]
+set_property library xil_defaultlib [get_files  c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_uutb.vhd]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'FIR_filter_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj FIR_filter_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/Control_Unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Control_Unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_unit'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/MAC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MAC'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/RAM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/depth_reg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'depth_reg'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/dff_delay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DFF'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/src/FIR_filter_uutb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto ec47bc4fa83145e4adf2328c4182a8ea --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FIR_filter_tb_behav xil_defaultlib.FIR_filter_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.DFF [dff_default]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=9)\]
+Compiling architecture behavioral of entity xil_defaultlib.Control_Unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.RAM [ram_default]
+Compiling architecture behavioral of entity xil_defaultlib.MAC [mac_default]
+Compiling architecture behavioral of entity xil_defaultlib.FIR_filter_unit [fir_filter_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.fir_filter_tb
+Built simulation snapshot FIR_filter_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/FIR_filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 27 19:17:13 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FIR_filter_tb_behav -key {Behavioral:sim_1:Functional:FIR_filter_tb} -tclbatch {FIR_filter_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source FIR_filter_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FIR_filter_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2743.348 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml' ignored by IP packager.
+set_property core_revision 50 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+upgrade_ip -vlnv xilinx.com:user:fir_filter_ip:1.0 [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/zybo_design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded zybo_design_1_fir_filter_ip_0_0 from fir_filter_ip_v1.0 1.0 to fir_filter_ip_v1.0 1.0
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+Wrote  : <C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/ui/bd_cadacc23.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:fir_filter_ip:1.0 [get_ips  zybo_design_1_fir_filter_ip_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/zybo_design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded zybo_design_1_fir_filter_ip_0_0 (fir_filter_ip_v1.0 1.0) from revision 49 to revision 50
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips zybo_design_1_fir_filter_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'fir_filter_ip_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'fir_filter_ip_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'fir_filter_ip_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'fir_filter_ip_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+validate_bd_design
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <C:\Users\gamin\VivadoWorkspace\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.srcs\sources_1\bd\zybo_design_1\zybo_design_1.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+INFO: [BD 41-1662] The design 'zybo_design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/synth/zybo_design_1.vhd
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/sim/zybo_design_1.vhd
+VHDL Output written to : C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hdl/zybo_design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fir_filter_ip_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/ip/zybo_design_1_auto_pc_0/zybo_design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hw_handoff/zybo_design_1.hwh
+Generated Block Design Tcl file C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/hw_handoff/zybo_design_1_bd.tcl
+Generated Hardware Definition File C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.srcs/sources_1/bd/zybo_design_1/synth/zybo_design_1.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP zybo_design_1_auto_pc_0, cache-ID = a55a396f04eaec77; cache size = 19.888 MB.
+[Sat Apr 27 19:21:06 2024] Launched zybo_design_1_fir_filter_ip_0_0_synth_1, synth_1...
+Run output will be captured here:
+zybo_design_1_fir_filter_ip_0_0_synth_1: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/zybo_design_1_fir_filter_ip_0_0_synth_1/runme.log
+synth_1: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/synth_1/runme.log
+[Sat Apr 27 19:21:06 2024] Launched impl_1...
+Run output will be captured here: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 2939.301 ; gain = 0.000
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'fir_filter_ip_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'fir_filter_ip_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'fir_filter_ip_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+ipx::edit_ip_in_project -upgrade true -name fir_filter_ip_v1_0_project -directory C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.tmp/fir_filter_ip_v1_0_project c:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0/component.xml
+ERROR: [Project 1-161] Failed to remove the directory 'c:/users/gamin/vivadoworkspace/fir_with_zybo/fir_zynq7_ps_pl/fir_zynq7_ps_pl.tmp/fir_filter_ip_v1_0_project/fir_filter_ip_v1_0_project.sim'. The directory might be in use by some other process.
+ERROR: [Ipptcl 7-562] Cannot create project 'fir_filter_ip_v1_0_project'.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 27 19:24:20 2024...

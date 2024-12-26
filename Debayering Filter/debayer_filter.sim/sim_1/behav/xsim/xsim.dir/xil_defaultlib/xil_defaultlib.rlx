@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sim_1/new/Ser2Par_tb.vhd,1715272562,vhdl,,,,ser2par_tb,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sim_1/new/accu_tb.vhd,1715352366,vhdl,,,,accu_tb,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sim_1/new/debayerBlock_tb.vhd,1715624814,vhdl,,,,debayerblock_tb,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sim_1/new/debayerCU_tb.vhd,1715435127,vhdl,,,,debayercu_tb,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sources_1/imports/new/depth_reg.vhd,1714749069,vhdl,,,,depth_reg,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sources_1/new/RAM_FIFO.vhd,1715370955,vhdl,,,,ram_fifo,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sources_1/new/Serial2Parallel.vhd,1715617687,vhdl,,,,serial2parallel,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sources_1/new/accu.vhd,1715595767,vhdl,,,,accu,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sources_1/new/debayerController.vhd,1715617035,vhdl,,,,debayercu,,,,,,,,
+C:/Users/giorg/.Xilinx/Projects/DeBayeringFilter/DeBayeringFilter/debayer_filter/debayer_filter.srcs/sources_1/new/debayer_block.vhd,1715617776,vhdl,,,,debayer_block,,,,,,,,

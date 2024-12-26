@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../debayer_filter.srcs/sources_1/new/accu.vhd" \
+"../../../../debayer_filter.srcs/sim_1/new/accu_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,32 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 06918f37956d4d9da5f1be74119b18c8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Pipelined_Multiplier_tb_behav xil_defaultlib.Pipelined_Multiplier_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=6)\]
+Compiling architecture behavioral of entity xil_defaultlib.synch_FA [synch_fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=7)\]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.custom_FA [\custom_FA(n=0)\]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.custom_FA [\custom_FA(n=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.custom_FA [\custom_FA(n=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.custom_FA [\custom_FA(n=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.custom_FA [\custom_FA(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.depth_reg [\depth_reg(n=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.custom_FA [\custom_FA(n=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.custom_FA [\custom_FA(n=6)\]
+Compiling architecture behavioral of entity xil_defaultlib.Pipelined_Multiplier [pipelined_multiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.pipelined_multiplier_tb
+Built simulation snapshot Pipelined_Multiplier_tb_behav

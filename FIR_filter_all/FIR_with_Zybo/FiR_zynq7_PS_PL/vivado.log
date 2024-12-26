@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Dec 26 13:43:27 2024
+# Process ID: 3816
+# Current directory: C:/Users/George/Desktop/FIR_filter_all/FIR_with_Zybo/FiR_zynq7_PS_PL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9440 C:\Users\George\Desktop\FIR_filter_all\FIR_with_Zybo\FiR_zynq7_PS_PL\FiR_zynq7_PS_PL.xpr
+# Log file: C:/Users/George/Desktop/FIR_filter_all/FIR_with_Zybo/FiR_zynq7_PS_PL/vivado.log
+# Journal file: C:/Users/George/Desktop/FIR_filter_all/FIR_with_Zybo/FiR_zynq7_PS_PL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/George/Desktop/FIR_filter_all/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:zybo:part0:2.0. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/George/Desktop/FIR_filter_all/FIR_with_Zybo/ip_repo/fir_filter_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'zybo_design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+zybo_design_1_processing_system7_0_0
+zybo_design_1_rst_ps7_0_50M_0
+
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:09 . Memory (MB): peak = 846.113 ; gain = 162.023
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 26 13:49:42 2024...

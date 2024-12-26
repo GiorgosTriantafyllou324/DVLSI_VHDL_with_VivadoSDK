@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"FIR_filter_tb_func_impl.vhd" \
+"../../../../../FIR_filter.srcs/sim_1/new/FIR_filter_uutb.vhd" \
+
+# Do not sort compile order
+nosort

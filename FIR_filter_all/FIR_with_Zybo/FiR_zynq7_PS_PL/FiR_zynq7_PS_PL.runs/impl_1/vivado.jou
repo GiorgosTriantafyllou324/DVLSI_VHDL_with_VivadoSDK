@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May  3 17:28:59 2024
+# Process ID: 17760
+# Current directory: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1
+# Command line: vivado.exe -log zybo_design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source zybo_design_1_wrapper.tcl -notrace
+# Log file: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1/zybo_design_1_wrapper.vdi
+# Journal file: C:/Users/gamin/VivadoWorkspace/FIR_with_Zybo/FiR_zynq7_PS_PL/FiR_zynq7_PS_PL.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source zybo_design_1_wrapper.tcl -notrace

@@ -1,0 +1,7 @@
+Running: xsim.dir/debayerCU_tb_behav/xsimk.exe -simmode gui -wdb debayerCU_tb_behav.wdb -simrunnum 0 -socket 50862
+Design successfully loaded
+Design Loading Memory Usage: 6676 KB (Peak: 6676 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7276 KB (Peak: 7276 KB)
+Simulation CPU Usage: 61 ms

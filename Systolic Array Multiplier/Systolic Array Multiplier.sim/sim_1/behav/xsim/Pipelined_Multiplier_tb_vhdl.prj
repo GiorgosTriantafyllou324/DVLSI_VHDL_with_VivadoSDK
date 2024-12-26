@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Pipeline_Technique.srcs/sources_1/new/Pipelined_Multiplier.vhd" \
+"../../../../Pipeline_Technique.srcs/sources_1/new/custom_FA.vhd" \
+"../../../../Pipeline_Technique.srcs/sources_1/new/depth_reg.vhd" \
+"../../../../Pipeline_Technique.srcs/sources_1/new/synch_FA.vhd" \
+"../../../../Pipeline_Technique.srcs/sim_1/new/Pipelined_Multiplier_tb.vhd" \
+
+# Do not sort compile order
+nosort

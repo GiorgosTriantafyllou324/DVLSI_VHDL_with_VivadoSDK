@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamin/VivadoWorkspace/FIR_filter/FIR_filter.sim/sim_1/synth/func/xsim/FIR_filter_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DFF'
+INFO: [VRFC 10-3107] analyzing entity 'MAC'
+INFO: [VRFC 10-3107] analyzing entity 'RAM'
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
+INFO: [VRFC 10-3107] analyzing entity 'depth_reg'
+INFO: [VRFC 10-3107] analyzing entity 'Control_Unit'
+INFO: [VRFC 10-3107] analyzing entity 'FIR_filter_unit'

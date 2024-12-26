@@ -1,0 +1,1 @@
+-wto "475a4e1784dc426e87d14c2291a6ccb5" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "FIR_blocks_tb_func_synth" "xil_defaultlib.FIR_blocks_tb" -log "elaborate.log" 
